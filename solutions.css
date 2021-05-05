@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+ body {
+    background-color: transparent !important; 
+    height: auto;
+    font-family: 'Orbitron', sans-serif !important;
+    max-width: 100%;
+}
+
+html { 
+    background-color: #003A51 !important;
+}
+
+nav {
+    margin-top: 33px !important;
+    background: rgba(196, 196, 196, 0.05);
+}
+
+
+.area {
+    text-align: center;
+    font-size: 3.5em;
+    color: #fff;
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: blur .75s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+    letter-spacing: .025em;
+    margin-top: 1em;
+  }
+  
+  @keyframes blur {
+    from {
+      text-shadow:0px 0px 10px #fff,
+        0px 0px 10px #fff, 
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #fff,
+        0px 0px 25px #7B96B8,
+        0px 0px 25px #7B96B8,
+        0px 10px 50px #7B96B8,
+        0px 10px 50px #7B96B8,
+        0px 10px 50px #7B96B8,
+        0px 10px 50px #7B96B8,
+        0px -10px 50px #7B96B8,
+        0px -10px 50px #7B96B8;
+    }
+  }
+  
+  #carouselExampleControls {
+      width: 800px;
+      height: 400px;
+  }
+  
+  .carousel_space {
+      padding: 3%;
+      margin-left: 20em;
+  }
+  
+  
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .carousel_space {
+        padding: 3%;
+        margin-left: 0em !important;
+    }
+      
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .carousel_space {
+        padding: 3%;
+        margin-left: 0em !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .carousel_space {
+        padding: 3%;
+        margin-left: 0em !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .carousel_space {
+        padding: 3%;
+        margin-left: 0em !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .carousel_space {
+        padding: 3%;
+        margin-left: 0em !important;
+    }
+}
+
+/* Footer */
+  
+footer{
+    background: #003A51;
+    color:white;
+    margin-top: 5em;
+    /* columns 1 */
+
+
+font-family: Orbitron;
+font-style: normal !important;
+font-weight: normal !important;
+font-size: 15px;
+line-height: 19px;
+/* identical to box height */
+letter-spacing: 0.75px;
+text-transform: uppercase;
+    
+}
+    
+.footer-bg {
+    height: 221px;
+    width: 100%;
+    background: url(./images/background_unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-bg p {
+
+position: absolute;
+width: 376px;
+height: 38px;
+margin-top: 80px;
+left: calc(50% - 376px/2 - 382px);
+
+font-family: Orbitron;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 38px;
+
+color: #F2FBFF;
+
+}
+
+footer a {
+    color: #fff;
+}
+
+#footer-earth {
+    margin-left: -5.5em;
+}
+
+.footer-arrow {
+  margin-left: 5em;
+  margin-top: -8em !important;
+}
+
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .footer-arrow {
+        display: none;
+    }
+    .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+      }
+      
+    .join {
+        display: none;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    #button-background {
+        display: none;
+
+    }
+
+}
+
+#button-background {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 73.02px;
+    background: rgba(0, 0, 0, 0.45);
+    box-shadow: -1px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin-left: 43em !important;
+    margin-top: 4em;
+}
+
+input#email-slide {
+    background: none !important;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-family: Orbitron;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    text-transform: lowercase;
+}
+
+#slider {
+    transition: width 0.3s, border-radius 0.3s, height 0.3s;
+    position: absolute;
+    left: -10px;
+    background-image: url(./images/background_unsplash.jpg);
+    background-size: cover;
+    width: 77px;
+    height: 71.99px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1 !important;
+}
+
+#slider.unlocked {
+    transition: all 0.3s;
+    width: inherit;
+    left: 0 !important;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.material-icons {
+    color: black;
+    font-size: 50px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.slide-text {
+    color: #3a3d55;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    font-size: 14px;
+    color: white;
+}
+
+.bottom a {
+    color: white;
+}
+
+/* Social links footer */
+
+.social-links a {
+    padding-left: 1em;
+}
+
+div.social-links {
+    margin-top: 5em;
+    margin-right: -65em;
+}
