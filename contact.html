@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=Your API key&lang=en_RU" type="text/javascript"></script>
+    <title>Contact</title>
+
+    <script type="text/javascript">
+        var moscow_map,
+            piter_map;
+            
+        ymaps.ready(function(){
+            moscow_map = new ymaps.Map("first_map", {
+                center: [55.76, 37.64],
+                zoom: 10
+            });
+            piter_map = new ymaps.Map(document.getElementsByTagName('p')[2], {
+                center: [59.94, 30.32],
+                zoom: 9
+            });
+        });
+    </script>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="index.html"><img id="logo" style="max-width:50px; margin-right: 10px; margin-bottom: -5px;" src="./images/earth_logo.png"></a>
+            <a class="navbar-brand" href="#">ecoSpace</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="solutions.html">Recycling Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="volunteers.html">Our Volunteers</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <!-- Contact Form -->
+            <form action="mailto:chukanova2015@gmail.com" method=”POST” enctype=”multipart/form-data”>
+                <div class="contact container">
+                    <header class="head_contact">CONTACT US</header>
+                    <div class="inputs">
+                        <label for="fname"><i><img src="./images/icons_person.svg" alt=""></i></label>
+                        <input type="text" id="fname" name="firstname">
+                        <label for="email"><i><img src="./images/mail.svg" alt=""></i></label>
+                        <input type="email" id="mail" name="firstname">
+                        <label for="comment" id="pen"><i><img id="pen" src="./images/bi_pen.svg" alt=""></i></label>
+                        <textarea name="comment" form="usrform"></textarea>
+                        <input id="submit_btn" type="submit" value="SUBMIT">
+        
+                    </div>
+                </div>
+            </form>
+          </div>
+          <div class="col-sm container container-fluid">
+                <div id="first_map"></div>
+            </div>
+          </div>
+      </div>  
+    
+</body>
+</html>
